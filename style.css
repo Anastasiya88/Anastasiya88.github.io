@@ -1,0 +1,51 @@
+body {
+    width: 1440px;
+    margin-top: 40px;
+}
+
+.header {
+    text-align: center;
+    font-size: 13px;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    font-size: 17px;
+}
+
+.list {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.list p, ul{
+    margin-top: 27px;
+}
+
+
+ul li{
+    line-height: 1.5;
+    margin-left: -14px;
+}
+
+.contacts{
+    line-height: 0.5;
+    margin-top: 35px;
+    margin-bottom: 27px;
+}
+
+.vk{
+    margin-top: 37px;
+}
+
+
+.feedback{
+    border-top: 1px solid black;
+    line-height: 0.5;
+}
+
+.feedback p{
+    margin-top: 37px;
+}
