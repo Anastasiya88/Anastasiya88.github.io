@@ -1,51 +1,65 @@
 body {
-    width: 1440px;
-    margin-top: 40px;
+background-color: #efefef;
+font-size: 16px;
+}
+
+.profile {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: white;
+  box-shadow: 0 0 5px #d6d6d6;
 }
 
 .header {
     text-align: center;
-    font-size: 13px;
 }
 
 .content {
     margin-left: auto;
     margin-right: auto;
     width: 450px;
-    font-size: 17px;
+}
+
+.profession {
+    padding-left: 15px;
 }
 
 .list {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    padding-left: 15px;
 }
 
-.list p, ul{
+.list p, ul {
     margin-top: 27px;
 }
 
 
-ul li{
+ul li {
     line-height: 1.5;
     margin-left: -14px;
 }
 
-.contacts{
-    line-height: 0.5;
+.contacts {
+    line-height: 1;
     margin-top: 35px;
     margin-bottom: 27px;
+    padding-left: 15px;
 }
 
-.vk{
+.vk {
     margin-top: 37px;
 }
 
 
-.feedback{
+.feedback {
     border-top: 1px solid black;
-    line-height: 0.5;
+    line-height: 1;
+    padding-left: 15px;
 }
 
-.feedback p{
+.feedback p {
     margin-top: 37px;
 }
