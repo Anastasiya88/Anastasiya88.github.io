@@ -56,7 +56,7 @@ body {
     color: white;
 }
 
-.menu ul li a:hover {
+.menu ul li :hover {
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
     background-image: -webkit-linear-gradient(bottom, #2e2e2e 0%, #4a4a4a 100%);
@@ -76,7 +76,6 @@ a {
 }
 
 .sidebar {
-    position: absolute;
     float: left;
     width: 240px;
     height: 240px;
@@ -87,7 +86,7 @@ a {
 }
 
 .sidebar ul li {
-    height: 39px;
+    overflow: hidden;
     border-bottom: 1px solid #c8c8c8;
 }
 
@@ -96,6 +95,9 @@ a {
 }
 
 .sidebar ul li a {
+    display: inline-block;
+    width: 216px;
+    height: 39.6px;
     padding-left: 24px;
     color: #656363;
     background-color: white;
@@ -104,10 +106,10 @@ a {
 .sidebar ul li a:hover {
     display: inline-block;
     width: 203px;
-    height: 39px;
+    height: 39.6px;
     padding-left: 37px;
-    background-color: #f9f9f9;
     color: #2c2c2c;
+    background-color: #f9f9f9;
 }
 
 .content {
