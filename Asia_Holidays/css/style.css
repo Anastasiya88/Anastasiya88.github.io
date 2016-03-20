@@ -1,5 +1,4 @@
 body {
-    /*background-image: url(../img/bg.png);*/
     height: 1020px;
     background-image: -webkit-repeating-linear-gradient(bottom, #0c739f 1px, #40c6d3 848px, #fff 849px, #11cde1 995px, #5ef0ff 996px, #5ef0ff 997px, #128aa7 998px, #128aa7 1020px);
     background-image: -o-repeating-linear-gradient(bottom, #0c739f 1px, #40c6d3 848px, #fff 849px, #11cde1 995px, #5ef0ff 996px, #5ef0ff 997px, #128aa7 998px, #128aa7 1020px);
@@ -220,7 +219,6 @@ ul.menu > li:hover > ul.submenu > li {
 }
 
 .leftColumn {
-    display: inline-block;
     float: left;
     width: 209px;
     padding-top: 8px;
@@ -233,14 +231,13 @@ ul.menu > li:hover > ul.submenu > li {
 }
 
 .centerColumn {
-    width: 580px;
-    padding-bottom: 20000px;
-    margin-bottom: -20000px;
+    width: 540px;
+    padding: 8px 20px 20000px 20px;
+    margin: 0 auto -20000px;
     background: white;
 }
 
 .rightColumn {
-    display: inline-block;
     float: right;
     width: 209px;
     padding-top: 8px;
