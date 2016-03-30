@@ -1,0 +1,35 @@
+table {
+    width: 500px;
+    height: 540px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    height: 21px;
+    border: 9px solid #000;
+}
+
+.line_1 {
+    height: 49px;
+}
+
+.column_1 {
+    width: 45px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: #ff5d37;
+}
+
+.black {
+    background-color: #000;
+}
+
+.blue {
+    background-color: #004383;
+}

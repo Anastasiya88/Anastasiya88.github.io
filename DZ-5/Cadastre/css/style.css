@@ -1,0 +1,298 @@
+/*@font-face {
+    font-family: 'Helvetica Neue';
+    src: url(../fonts/helveticaneue-thin-webfont.eot);
+    src: url(../fonts/helveticaneue-thin-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/helveticaneue-thin-webfont.woff2) format('woff2'),
+         url(../fonts/helveticaneue-thin-webfont.woff) format('woff'),
+         url(../fonts/helveticaneue-thin-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+body {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Tahoma;
+}
+
+.wrapper {
+    width: 1215px;
+    height: 1030px;
+    margin: 0 auto;;
+}
+
+.header {
+    height: 35px;
+    background: #085292 url(../img/menu.png) left top repeat-x;
+    font-size: 14px;
+}
+
+.main_menu {
+    float: left;
+    width: 378px;
+    height: 35px;
+    margin-left: 455px;
+}
+
+.main_menu li {
+    float: left;
+    line-height: 2.3;
+}
+
+.main_menu li a {
+    display: inline-block;
+    height: 35px;
+    padding-left: 13px;
+    padding-right: 10px;
+    color: #489ad4;
+    text-decoration: none;
+}
+
+.main_menu li a:hover {
+    display: inline-block;
+    height: 35px;
+    padding-left: 13px;
+    padding-right: 10px;
+    background-color: #4eabda;
+    color: white;
+}
+
+.supporting_menu {
+    position: relative;
+    float: right;
+    width: 360px;
+    margin-right: 21px;
+}
+
+.supporting_menu:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    bottom: 3px;
+    border-left: 1px solid #4299d2;
+}
+
+.supporting_menu li {
+    float: left;
+    line-height: 2.3;
+}
+
+.supporting_menu li a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    padding-left: 21px;
+    padding-right: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.001);
+    border-top: none;
+    color: white;
+    text-decoration: none;
+}
+
+.supporting_menu li a:hover {
+    display: inline-block;
+    height: 34px;
+    padding-left: 21px;
+    padding-right: 15px;
+    border: 1px solid #4299d2;
+    border-top: none;
+    background-image: -webkit-linear-gradient(bottom, #2e7ac4 0%, #51b1dc 100%);
+    background-image: -o-linear-gradient(bottom, #2e7ac4 0%, #51b1dc 100%);
+    background-image: linear-gradient(to top, #2e7ac4 0%, #51b1dc 100%);
+    color: white;
+    text-decoration: none;
+}
+
+.supporting_menu img {
+    position: absolute;
+    top: 6px;
+}
+
+.supporting_menu p {
+    padding-left: 32px;
+}
+
+.supporting_menu span {
+    text-decoration: underline;
+}
+
+.content {
+    position: absolute;
+    width: 1215px;
+    height: 995px;
+    margin: 0 auto;
+}
+
+.cadastre {
+    width: 560px;
+    height: 613px;
+    margin-top: 152px;
+    margin-left: 362px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 2px solid #b7bfaa;
+    font-size: 24px;
+}
+
+form {
+    font-size: 14px;
+}
+
+button {
+    position: relative;
+    width: 250px;
+    height: 33px;
+    margin-top: 36px;
+    margin-left: 36px;
+    padding-right: 45px;
+    border-top: 1px solid #778ab5;
+    border-left: 1px solid #4c68a9;
+    border-right: none;
+    border-bottom: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-image: -webkit-linear-gradient(bottom, #314172 0%, #3d5792 100%);
+    background-image: -o-linear-gradient(bottom, #314172 0%, #3d5792 100%);
+    background-image: linear-gradient(to top, #314172 0%, #3d5792 100%);
+    font-weight: bold;
+    color: white;
+    outline: none;
+}
+
+button::before {
+    content: "f";
+    position: absolute;
+    top: -1px;
+    left: -36.5px;
+    width: 34px;
+    height: 100%;
+    max-height: 30px;
+    padding-top: 2px;
+    padding-left: 1px;
+    border-top: 1px solid #778ab5;
+    border-right: 1px solid #213c71;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-image: -webkit-linear-gradient(bottom, #314172 0%, #3d5792 100%);
+    background-image: -o-linear-gradient(bottom, #314172 0%, #3d5792 100%);
+    background-image: linear-gradient(to top, #314172 0%, #3d5792 100%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button:active {
+    top: -1px;
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 35px;
+    width: 5.8px;
+    height: 6px;
+    border: 3px solid;
+    border-top: none;
+    border-left: none;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+button span {
+    font-weight: normal;
+}
+
+.ou {
+    position: relative;
+    margin-top: 32px;
+    margin-bottom: 28px;
+    color: #999;
+}
+
+.ou:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 134px;
+    width: 130px;
+    border: 1px double;
+    border-top-color: #666;
+    border-bottom-color: black;
+}
+
+
+.ou:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 134px;
+    width: 130px;
+    border: 1px double;
+    border-top-color: #666;
+    border-bottom-color: black;
+}
+
+.input {
+    width: 275px;
+    height: 35px;
+    margin-bottom: 14px;
+    padding-left: 18px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #484948;
+    background-color: #101010;
+    font-size: 14px;
+}
+
+.input:focus {
+    border-bottom: 1px solid #689bcc;
+    background-color: #1b5288;
+    box-shadow: 0 0 10px inset #000;
+    box-shadow: 0 0 10px 3px #4986ad;
+    outline: none;
+}
+
+.updates {
+    margin-top: 3px;
+    padding-right: 65px;
+}
+
+[type=submit] {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 7px 14px 11px 12px;
+    border-top: 2px solid #67c6e6;
+    border-left: 1px solid #4c9dd7;
+    border-bottom: 1px solid #4c9dd7;
+    border-right: 1px solid #4c9dd7;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(bottom, #2e7ac4 0%, #50aedb 100%);
+    background-image: -o-linear-gradient(bottom, #2e7ac4 0%, #50aedb 100%);
+    background-image: linear-gradient(to top, #2e7ac4 0%, #50aedb 100%);
+    color: white;
+}
+
+[type=submit]:active {
+    background-image: -webkit-linear-gradient(bottom, #50aedb 0%, #2e7ac4 100%);
+    background-image: -o-linear-gradient(bottom, #50aedb 0%, #2e7ac4 100%);
+    background-image: linear-gradient(to top, #50aedb 0%, #2e7ac4 100%);
+    outline: none;
+}
+
+.agree {
+    display: inline-block;
+    width: 310px;
+    margin-top: 17px;
+    font-size: 11px;
+    line-height: 1.5;
+}
