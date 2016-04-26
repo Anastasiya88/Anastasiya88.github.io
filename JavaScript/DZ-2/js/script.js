@@ -10,46 +10,51 @@ var test = {
     document.body.insertBefore(div, document.body.firstChild);
   },
 
-  h2: function(header_element){
-    var header= document.createElement('h2');
-    header.innerHTML = header_element;
-
-    div.insertBefore(header, div.h1);
-  },
-
   form: function(){
     var form = document.createElement('form');
     form.className = "response";
-    form.innerHTML = "<div><input type='checkbox' id='option'>\
-    <label class= 'option' for='option'>Вариант ответа №1</label></div>";
 
-    div.insertBefore(form, div.h1);
+    div.appendChild(form);
+  },
 
-    var form2 = form.cloneNode(true);
-    form2.querySelector('.option').innerHTML = 'Вариант ответа №2';
+  h2: function(header_element){
+    var header = document.createElement('h2');
+    header.innerHTML = header_element;
 
-    form.parentNode.insertBefore(form2, form.nextSibling);
+    var response = document.querySelector('.response')
+    response.appendChild(header);
+  },
 
-    var form3 = form.cloneNode(true);
-    form3.querySelector('.option').innerHTML = 'Вариант ответа №3';
+  input: function(label_element) {
+    var label = document.createElement('label');
+    label.innerHTML = '<input type="checkbox">' + label_element;
 
-    form.parentNode.appendChild(form3);
+    var response = document.querySelector('.response')
+    response.insertBefore(label, response.header);
   },
 
   submit: function () {
     var button = document.createElement('button');
     button.innerHTML = 'Проверить мои результаты';
 
-    div.appendChild(button);
+    var response = document.querySelector('.response')
+    response.appendChild(button);
   },
 
 }
 
 test.wrapper()
+test.form()
 test.h2('1.Вопрос №1')
-test.form()
+test.input('Вариант ответа №1')
+test.input('Вариант ответа №2')
+test.input('Вариант ответа №3')
 test.h2('2.Вопрос №2')
-test.form()
+test.input('Вариант ответа №1')
+test.input('Вариант ответа №2')
+test.input('Вариант ответа №3')
 test.h2('3.Вопрос №3')
-test.form()
+test.input('Вариант ответа №1')
+test.input('Вариант ответа №2')
+test.input('Вариант ответа №3')
 test.submit()

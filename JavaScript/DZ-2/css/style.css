@@ -27,7 +27,7 @@ h2 {
     font-size: 18px;
 }
 
-.response {
+label {
     float: left;
     clear: both;
     margin-left: 119px;
