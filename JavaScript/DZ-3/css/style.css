@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+form {
+    width: 500px;
+    margin: 200px auto 0;
+    text-align: center;
+}
+
+#count {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 100px;
+    border: 1px solid black;
+    color: #000;
+    font-size: 48px;
+    cursor: default;
+}
+
+#hours_min_sec {
+    font-size: 48px;
+}
+
+#ms {
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    font-size: 24px;
+}
+
+#startPauseCont {
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid black;
+
+}
+
+#clear {
+    float: right;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid black;
+
+}
