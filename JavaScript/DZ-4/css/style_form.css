@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+form {
+    width: 600px;
+    height: 250px;
+    margin: 30px auto 0;
+}
+
+.fields {
+    height: 200px;
+    border: 1px solid grey;
+    box-shadow: inset 0 0 5px grey;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+.tooltipe {
+    display: none;
+    width: 200px;
+    height: 15px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px grey;
+    background: #fff;
+    font-size: 12px;
+}
+
+#help {
+    margin-top: 2px;
+    border-radius: 2px;
+    border: 1px solid #D0CECE;
+    color: grey;
+    cursor: pointer;
+}
+
+#help:hover {
+    border: 1px solid grey;
+    color: black;
+}
+
+#help:active {
+    background: #fff;
+}
