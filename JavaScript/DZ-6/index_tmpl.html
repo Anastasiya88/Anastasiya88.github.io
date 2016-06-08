@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <link rel="stylesheet" href="css/style_tmpl.css">
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/script_tmpl.js"></script>
+</head>
+<body>
+  <script type="text/template" id="profile">
+    <div class="profile">
+
+      <div class="header">
+        <h1><%= name %></h1>
+        <img src="<%= photo.src %>" height="<%= photo.height %>" alt="<%= photo.alt %>">
+      </div>
+
+      <div class="content">
+        <p class="profession"><%= profession %></p>
+        <div class="list">
+          <p><%= list %></p>
+          <ul>
+            <% for (var i=0;i<motives.length;i++){%>
+              <li>
+                <%= motives[i] %>
+              </li>
+              <% }; %>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <p><%= phone %></p>
+          <span><%= number %></span>
+          <p class="vk"><%= vk %></p>
+          <span><%= vk_link %></span>
+        </div>
+
+        <div class="feedback">
+          <p><%= feedback %></p>
+          <span><%= feedback_text %></span>
+        </div>
+
+      </div>
+    </div>
+  </script>
+
+</body>
+</html>
