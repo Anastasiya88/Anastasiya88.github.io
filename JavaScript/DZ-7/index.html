@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+  <script type="text/template" id= "testing">
+    <form name="quiz" action="index.html" method="post">
+      <h1><%= title %></h1>
+      <p class="question">
+        <% for (var i=0; i<questions.length;i++){ %>
+          <h2><%= questions[i].ask %></h2>
+          <% for (var j=0; j<questions[i].answers.length;j++){ %>
+            <label for="<%= questions[i].answers[j].id %>">
+              <input type="checkbox" id="<%= questions[i].answers[j].id %>">
+              <%= questions[i].answers[j].text %>
+            </label>
+          <% }; %>
+        <% }; %>
+      </p>
+      <button id ="check"><%= check %></button>
+      <button id="reset"><%= reset %></button>
+    </form>
+  </script>
+
+
+
+
+</body>
+</html>

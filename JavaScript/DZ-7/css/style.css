@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+h1 {
+    float: left;
+    clear: both;
+    margin-left: 270px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    float: left;
+    clear: both;
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+label {
+    float: left;
+    clear: both;
+    margin-left: 119px;
+    margin-top: 5px;
+}
+
+button {
+    float: left;
+    clear: both;
+    width: 325px;
+    height: 53px;
+    margin-top: 57px;
+    margin-left: 255px;
+    background: #cfe1f5;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:active {
+    background-image: -webkit-linear-gradient(bottom, #94bee3 0%, #c3d4e4 100%);
+    background-image: -o-linear-gradient(bottom, #94bee3 0%, #c3d4e4 100%);
+    background-image: -ms-linear-gradient(bottom, #94bee3 0%, #c3d4e4 100%);
+    background-image: linear-gradient(bottom, #94bee3 0%, #c3d4e4 100%);
+}
