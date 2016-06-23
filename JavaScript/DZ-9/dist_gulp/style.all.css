@@ -1,0 +1,209 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+@CHARSET "UTF-8";
+
+.jquery-selectbox {
+  position: relative;
+  height: 16px;
+  border: 1px solid #d2ad63;
+  width: 105px;
+  z-index: 0;
+  float: left;
+  display: inline-block;
+  margin: 4px 4px 4px 0;
+  font-size: 9px;
+  font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: #444;
+  padding: 0;
+  background-image: url("../img/bg-TextField.gif");
+}
+
+.jquery-selectbox.selecthover {
+  border-color: #9F7627;
+  background-color: #FFFCDF;
+  background-image: url("../img/bg-TextFieldFocused.gif");
+  z-index: 700;
+}
+
+.jquery-selectbox .jquery-selectbox-currentItem {
+  padding: 3px 0px 0px 3px;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+}
+
+.jquery-selectbox .jquery-selectbox-list {
+  display: none;
+  position: absolute;
+  top: 16px;
+  padding: 2px;
+  left: 0px;
+  background: #fffcdf;
+  width: 100px;
+  height: 120px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1000;
+  border: 1px solid #d2ad63;
+}
+
+.jquery-selectbox .jquery-selectbox-moreButton {
+  /*
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	*/
+  float: right;
+  background: url("../img/lay-selectMoreButton.gif");
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.jquery-selectbox .jquery-selectbox-moreButton.morebuttonhover {
+  background: url("../img/lay-selectMoreButtonHover.gif");
+}
+
+.jquery-selectbox .jquery-selectbox-item.listelementhover {
+  background: #87683d;
+  color: #eee;
+}
+
+.jquery-selectbox .jquery-selectbox-item {
+  display: block;
+  cursor: default;
+}
+
+/** ERROR classes **/
+
+form .error .jquery-selectbox {
+  color: #d00;
+  border-color: #d00;
+  background-image: url("../img/bg-TextFieldError.gif");
+}
+body {
+  background: #F0EFE7;
+  margin: 0;
+  padding: 0;
+  font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4E443C;
+}
+
+.wrapper {
+  max-width: 620px;
+  padding: 0 20px 40px 20px;
+  margin: auto;
+}
+
+.demoTarget {
+  clear: right;
+}
+
+nav {
+  background-color: rgb(255,100,100);
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+/* sub navigation */
+
+nav li ul {
+  background-color: rgb(225,75,75);
+  position: absolute;
+  left: 0;
+  top: 40px;
+  /* make this equal to the line-height of the links (specified below) */
+  width: 100px;
+}
+
+nav li li {
+  position: relative;
+  margin: 0;
+  display: block;
+}
+
+nav li li ul {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  /* make this equal to the width of the sub nav above */
+  margin: 0;
+}
+
+/* style all links */
+
+nav a {
+  line-height: 40px;
+  padding: 0 12px;
+  margin: 0 12px;
+  color: rgb(255,255,255);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: rgb(50,50,50);
+}
+
+/* style sub level links */
+
+nav li li a {
+  border-bottom: solid 1px rgb(200,50,50);
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li li:last-child a {
+  border-bottom: none;
+}
+
+/* hide sub menu links */
+
+ul.sub-menu {
+  display: none;
+}
+
+/* show arrows for dropdowns */
+
+nav li.dropdown > a::after {
+  position: absolute;
+  left: 85%;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  display: block;
+  content: '';
+  border-top: 6px solid white;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  /*background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;*/
+}
+
+nav li li.dropdown > a::after {
+  position: absolute;
+  left: 80%;
+  top: 17px;
+  width: 0px;
+  height: 0px;
+  display: block;
+  content: '';
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 6px solid white;
+  /*background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;*/
+}
