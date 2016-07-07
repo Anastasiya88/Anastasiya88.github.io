@@ -35,6 +35,7 @@ label {
 }
 
 button {
+    display: block;
     float: left;
     clear: both;
     width: 325px;
@@ -52,4 +53,30 @@ button:active {
     background-image: -o-linear-gradient(bottom, #94bee3 0%, #c3d4e4 100%);
     background-image: -ms-linear-gradient(bottom, #94bee3 0%, #c3d4e4 100%);
     background-image: linear-gradient(bottom, #94bee3 0%, #c3d4e4 100%);
+}
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    margin: -150px 0 0 -250px;
+    padding: 20px;
+    background: #eee;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+.window button {
+    margin: 50px 0 0 39px;
+}
+
+.window p {
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
 }

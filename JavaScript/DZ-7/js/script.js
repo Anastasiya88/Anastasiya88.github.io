@@ -12,7 +12,7 @@ $(function(){
           {
             text:'Вариант ответа №1',
             id: 1,
-            correct: "true",
+            correct: true,
           },
           {
             text:'Вариант ответа №2',
@@ -64,8 +64,7 @@ $(function(){
           }],
       },
     ],
-    check: "Проверить мои результаты",
-    reset: "Попробовать ещё раз",
+    check: "Проверить мои результаты"
   };
 
   var setObj = JSON.stringify(test);
@@ -79,37 +78,28 @@ $(function(){
   var content = tmpl(html,test);
   $('body').append(content);
 
-  var $checkboxes = $("input:checked");
+  var window = $('<div class="window"></div>');
   var checkedAnswers = [];
   var allAnswers = [];
   var correctAnswers =[];
   var testSuccessful = true;
   var totalCorrectAnswers = 0;
 
-  $checkboxes.each(function ($item) {
-    checkedAnswers.push( $item.attr("id"));
-  });
-
-
   for(var i = 0; i < test.questions.length; i++) {
     allAnswers = allAnswers.concat(test.questions[i].answers);
   };
 
-  // for (var i = 0; i < allAnswers.length; i++) {
-  //   if (allAnswers[i].correct) {
-  //     correctAnswers.push(allAnswers[i].id);
-  //   };
-  // };
-  //
-  //   console.log('correctAnswers', correctAnswers)
+  function check(e){
+    e.preventDefault();
 
-
-  $("#check").on("click", function(){
+    $("input:checked").each(function () {
+      checkedAnswers.push( $(this).attr("id"));
+    });
 
     for (var i = 0; i < allAnswers.length; i++) {
       if (allAnswers[i].correct) {
         totalCorrectAnswers++;
-        if (checkedAnswers.indexOf(allAnswers[i].id) === -1) {
+        if (checkedAnswers.indexOf(allAnswers[i].id) !== -1) {
           testSuccessful = false;
           break;
         };
@@ -122,11 +112,30 @@ $(function(){
 
     console.log("checkedAnswers", checkedAnswers);
 
-
     if (testSuccessful) {
-        alert ("TEST IS PASSED!");
+        window.append('<p>TEST IS PASSED!</p>');
+        window.append("<button class = 'exit'>Close</button>");
     } else {
-        alert ("TEST IS FAILED!");
+        window.append('<p>TEST IS FAILED!</p>');
+        window.append("<button class ='exit'>Try again!</button>");
     };
-  });
+
+    $('body').append(window);
+
+
+    $(".exit").one('click', function (e) {
+        e.preventDefault()
+        window.detach().empty();
+        $('input').attr('checked', false);
+        location.reload();
+    });
+
+    return this;
+
+  };
+
+  $("button").one("click", check);
+
+  return this;
+
 });
