@@ -1,0 +1,37 @@
+body {
+    font-family: Arial,sans-serif;
+}
+
+.wrapper {
+    background: #eee;
+    margin: 0 auto;
+}
+
+.item-list {
+    clear: both;
+}
+
+.item {
+    display: inline-block;
+    float: left;
+    width: 217px;
+    margin-right: 700px;
+    line-height: 1.75;
+    color: blue;
+
+}
+
+.item-delete, .item-edit {
+    float: right;
+    color: orange;
+}
+
+.item-save, .item-add {
+    color: brown;
+}
+
+.controlls {
+    clear: both;
+    margin-top: 130px;
+    margin-left: 40px;
+}
