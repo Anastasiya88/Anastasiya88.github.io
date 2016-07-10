@@ -1,0 +1,93 @@
+@import "mixins";
+
+.jcarousel__wrapper {
+    margin: 39px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel__list {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel__item {
+    width: 100%;
+    float: left;
+    @include box-sizing("border-box");
+}
+
+.jcarousel__icon {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    @include border-radius(30px);
+    @include box-shadow(0 0 4px #F0EFE7);
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+}
+
+.jcarousel-control-next {
+    right: 15px;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    @include transform(-50% 0);
+    margin: 0 auto;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border: 3px solid rgba(255, 255, 255, 0.001);
+    background: #fff;
+    text-indent: -9999px;
+    margin-right: 15px;
+}
+
+.jcarousel-pagination a.active {
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border: 3px solid #fff;
+    outline-offset: -3px;
+    background: black;
+
+}
