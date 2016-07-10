@@ -1,0 +1,932 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 910px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+    padding: 13px 0 0 0;
+
+}
+
+.phone {
+    float: left;
+    font-size: 18px;
+    color: #5e696d;
+    padding: 7px 0 0 5px;
+}
+
+.phone img {
+    float: left;
+}
+
+.phone span {
+    float: left;
+    padding-top: 4px;
+    padding-left: 4px;
+    letter-spacing: 0.5px;
+}
+
+.main_image img {
+    padding-top: 10px;
+}
+
+.form_auth {
+    float: left;
+    width: 495px;
+    height: 25px;
+    margin: 4px 0 0 14px;
+    border-top: 1px solid #a6c3cf;
+    border-bottom: 1px solid #596d80;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px #b2b2b2;
+    font-size: 10px;
+    background-image: -moz-linear-gradient( bottom, #0c3357 0%, #1f6787 100%);
+    background-image: -webkit-linear-gradient( bottom, #0c3357 0%, #1f6787 100%);
+    background-image: -ms-linear-gradient( bottom, #0c3357 0%, #1f6787 100%);
+    background-image: linear-gradient( bottom, #0c3357 0%, #1f6787 100%);
+}
+
+.form_auth img {
+    float: left;
+    padding: 4px 4px 5px 8px;
+}
+
+.form_auth [type="text"],[type="password"] {
+    width: 106px;
+    height: 12px;
+    padding-left: 4px;
+    margin-top: 3px;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+
+.form_auth [type="text"] {
+    margin-right: 4px;
+}
+
+.form_auth [type="submit"] {
+    height: 15px;
+    width: 35px;
+    font-size: 11px;
+    border: none;
+    background: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form_auth span {
+    margin-left: -3px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.sign_up {
+    margin-left: 3px;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.forgot_password {
+    margin-left: 19px;
+    color: #bfbfbf;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.mini_menu {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 75px;
+    height: 20px;
+    margin-left: 17px;
+    margin-top: 6px;
+    border: 1px solid #c2c9cc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #c2c9cc;
+}
+
+.mini_menu li {
+    float: left;
+}
+
+.mini_menu a {
+    display: block;
+    height: 11px;
+    width: 11px;
+    margin-top: 2px;
+    margin-left: 9px;
+    background: #fff url(../img/mini_menu.png) 0 0 no-repeat;
+}
+
+.mini_menu .map {
+    width: 15px;
+    background-position: -14px;
+}
+
+.mini_menu .mail {
+    background-position: -32px;
+}
+
+.main_image img {
+    position: relative;
+    overflow: hidden;
+}
+
+.main_image a {
+    display: block;
+    position: absolute;
+    width: 265px;
+    height: 65px;
+    top: 159px;
+}
+
+.main_menu {
+    width: 909px;
+    height: 33px;
+    margin-top: 4px;
+    border: 1px solid #0d1642;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #50525e;
+    background-image: -moz-linear-gradient( bottom, #010101 1px, #2d3236 28px, #3a4046 29px, #505860 33px);
+    background-image: -webkit-linear-gradient( bottom, #010101 1px, #2d3236 28px, #3a4046 29px, #505860 33px);
+    background-image: -ms-linear-gradient( bottom, #010101 1px, #2d3236 29px, #3a4046 28px, #505860 33px);
+    background-image: linear-gradient( bottom, #010101 1px, #2d3236 29px, #3a4046 28px, #505860 33px);
+
+}
+
+.main_menu ul {
+    float: left;
+    width: 510px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 130px;
+}
+
+.main_menu li {
+    float: left;
+}
+
+.main_menu li a {
+    display: inline-block;
+    height: 26px;
+    padding: 0px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #b1bcc0;
+    line-height: 1.8;
+}
+
+.main_menu li a:hover {
+    border-radius: 15px;
+    background-image: -webkit-linear-gradient(bottom, #0c3357 0%, #25617b 100%);
+    background-image: -o-linear-gradient(bottom, #0c3357 0%, #25617b 100%);
+    background-image: -ms-linear-gradient(bottom, #0c3357 0%, #25617b 100%);
+    background-image: linear-gradient(bottom, #0c3357 0%, #25617b 100%);
+    color: #fff;
+}
+
+.basket {
+    float: right;
+    padding-right: 3px;
+}
+
+.basket a img {
+    float: left;
+    padding: 7px 7px;
+}
+
+.basket span {
+    line-height: 2.5;
+}
+
+.text {
+    color: #929b9f;
+    font-size: 11px;
+}
+
+.count {
+    color: #0d5a8f;
+    font-size: 12px;
+    padding-right: 12px;
+}
+
+.total {
+    padding-right: 7px;
+}
+
+.search {
+    overflow: hidden;
+    width: 910px;
+    height: 148px;
+    margin: 0 4px;
+    font-size: 10px;
+}
+
+.search_by_car {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 383px;
+    height: 132px;
+    margin-top: 11px;
+    padding: 1px 12px 0 17px;
+    border: 1px solid #b6b6b7;
+    border-radius: 18px;
+    box-shadow: 2px 2px 3px #b6b6b7;
+
+}
+
+.disks {
+    float: left;
+    width: 178px;
+}
+
+.tires {
+    float: right;
+    width: 178px;
+}
+
+h4 {
+    color: #154468;
+    font-weight: 900;
+}
+
+.disks h4 {
+    position: absolute;
+    top: 4px;
+    left: 21px;
+}
+
+.tires h4 {
+    position: absolute;
+    top: 2px;
+    right: 20px;
+}
+
+.search_by_car p {
+    float: left;
+    width: 75px;
+    text-align: left;
+}
+
+.disks .mark {
+    padding-top: 13px;
+}
+
+.equipment {
+    padding-top: 9px;
+}
+
+.year, .model {
+    padding-top: 6px;
+    line-height: 0.75;
+}
+
+.tires .mark {
+    padding-top: 11px;
+}
+
+.search_by_car span {
+    color: #77858b;
+}
+
+.select_custom {
+    width: 102px;
+    overflow: hidden;
+    background: #fff url('../img/select_arrow.png') no-repeat 84px 5px;
+}
+
+.select_custom select {
+    width: 125px;
+    background: transparent;
+    outline: none;
+
+}
+
+.select_custom_year {
+    width: 57px;
+    overflow: hidden;
+    background: #fff url('../img/select_arrow.png') no-repeat 39px 4px;
+}
+
+.select_custom_year select {
+    width: 80px;
+    background: transparent;
+    outline: none;
+}
+
+.select_custom_tires {
+    float: left;
+    width: 56px;
+    overflow: hidden;
+    margin-right: 9px;
+    background: #fff url('../img/select_arrow.png') no-repeat 39px 0;
+}
+
+.select_custom_tires:last-child {
+    margin-right: 0px;
+}
+
+.select_custom_tires select {
+    width: 74px;
+    background: transparent;
+    outline: none;
+}
+
+.select_custom_radius {
+    float: right;
+    width: 45px;
+    overflow: hidden;
+    margin-right: 73px;
+    background: #fff url('../img/select_arrow.png') no-repeat 27px 0;
+}
+
+.select_custom_radius select {
+    width: 63px;
+    background: transparent;
+    outline: none;
+}
+
+select {
+    border: none;
+    box-shadow: inset 1px 1px 2px #949494;
+}
+
+.disks [name=mark],[name=model] {
+    float: left;
+    margin-top: 6px;
+}
+
+.disks [name=equipment] {
+    float: left;
+    margin-top: 4px;
+}
+
+.disks [name=year] {
+    float: left;
+    margin-top: 4px;
+}
+
+.tires [name=mark],[name=model],[name=equipment] {
+    float: left;
+    margin-top: 4px;
+}
+
+.tires [name=year] {
+    float: left;
+    margin-top: 4px;
+}
+
+
+.search_tires {
+    float: left;
+    width: 169px;
+    height: 131px;
+    margin: 10px 7px 0 14px;
+    padding: 3px 14px 0 9px;
+    border: 1px solid #b6b6b7;
+    border-radius: 18px;
+    box-shadow: 2px 2px 3px #b6b6b7;
+}
+
+.search_tires_size {
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+.search_tires_size span {
+    float: left;
+    margin-top: 4px;
+}
+
+.size {
+    padding: 4px 0 0 5px;
+}
+
+#tires_size {
+    height: 17px;
+    margin: 0 3px 0 7px;
+    font-size: 11px;
+}
+
+#size {
+    height: 17px;
+    margin-left: 3px;
+    font-size: 11px;
+}
+
+.search_tires_R {
+    margin-left: 38px;
+    margin-top: 7px;
+    margin-bottom: 11px;
+}
+
+.search_tires_R span {
+    margin: 4px 2px 0 0;
+    font-size: 11px;
+}
+
+#radius {
+    font-size: 11px;
+}
+
+.search_tires_season {
+    overflow: hidden;
+    display: inline-block;
+    width: 105px;
+}
+
+.search_tires_season span {
+    float: left;
+    clear: both;
+    margin: 0 12px 0 7px;
+}
+
+.search_tires_season input {
+    float: left;
+    margin: 0;
+}
+
+.search_tires_season label {
+    float: left;
+    padding-left: 0px;
+    margin-bottom: px;
+}
+
+.summer {
+    height: 16px;
+    font-size: 12px;
+}
+
+.winter {
+    height: 16px;
+    float: left;
+    clear: both;
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.all_seasons {
+    height: 16px;
+    float: left;
+    clear: both;
+    margin-top: -2px;
+    margin-left: 50px;
+    font-size: 12px;
+}
+
+.search_tires .search_go {
+    margin-top: 38px;
+    margin-right: 3px;
+}
+
+.search_disks {
+    float: right;
+    width: 241px;
+    height: 130px;
+    margin: 10px 9px 0 0;
+    padding: 3px 17px 0 9px;
+    border: 1px solid #b6b6b7;
+    border-radius: 18px;
+    box-shadow: 2px 2px 3px #b6b6b7;
+    font-family: Lucida, sans-serif;
+}
+
+.search_disks span {
+    color: #77858b;
+}
+
+.search_disk_left {
+    float: left;
+    width: 166px;
+    border-right: 1px solid #bdc6ca;
+}
+
+.search_disk_right {
+    float: right;
+    width: 70px;
+}
+
+.search_disks p {
+    float: left;
+    display: block;
+    width: 85px;
+    padding-left: 6px;
+    padding-top: 4px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.search_disk_left p:last-child {
+    padding-bottom: -15px;
+}
+
+.search_disks select {
+    height: 17px;
+    font-size: 11px;
+}
+
+.select_diameter {
+    width: 61px;
+    overflow: hidden;
+    background: #fff url('../img/select_arrow.png') no-repeat 43px 0;
+}
+
+.quantity{
+    margin-bottom: 15px;
+}
+
+.select_diameter select {
+    width: 80px;
+    margin-left: 5px;
+    background: transparent;
+    outline: none;
+}
+
+.select_quantity {
+    width: 55px;
+    overflow: hidden;
+    background: #fff url('../img/select_arrow.png') no-repeat 37px 15px;
+}
+
+.select_quantity select {
+    width: 73px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    background: transparent;
+    outline: none;
+}
+
+.search_disk_right p {
+    font-size: 9px;
+}
+
+.search_disk_right span {
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+.search_disk_right select {
+    margin-left: 6px;
+}
+
+.disk_radius {
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.search_disks .search_go {
+    margin-top: 3px;
+    margin-right: 1px;
+}
+
+h3 {
+    padding-right: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #154467;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.search_disks h3 {
+    text-align: left;
+    padding-left: 1px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.search_tires h3 {
+    text-align: left;
+    padding-left: 2px;
+    letter-spacing: 1.5px;
+    padding-bottom: 7px;
+}
+
+.search_go {
+    float: right;
+    width: 52px;
+    margin-top: 6px;
+    margin-right: 6px;
+    padding: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #99a6b3;
+    background: none;
+    color: #154467;
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    cursor: pointer;
+}
+
+main {
+    overflow: hidden;
+    width: 910px;
+    height: 630px;
+    margin-top: 15px;
+}
+
+.left_sidebar {
+    position: relative;
+    float: left;
+    width: 180px;
+    margin-right: 12px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.center_content {
+    width: 526px;
+    height: 626px;
+    /*padding-bottom: 20000px;*/
+    margin: 0 auto -20000px;
+    background-image: -webkit-linear-gradient(bottom, #93a7b0 0%, #e5e7e8 100%);
+    background-image: -o-linear-gradient(bottom, #93a7b0 0%, #e5e7e8 100%);
+    background-image: linear-gradient(bottom, #93a7b0 0%, #e5e7e8 100%);
+    background-image: -ms-linear-gradient(bottom, #93a7b0 0%, #e5e7e8 100%);
+}
+
+.right_sidebar {
+    float: right;
+    width: 182px;
+    margin-left: 10px;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.catalog_title, .brands_title {
+    width: 179px;
+    height: 25px;
+    margin-bottom: 13px;
+    border: 1px solid #79878d;
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px #b6b6b7;
+    text-align: left;
+}
+
+h1, h2 {
+    float: left;
+    font-size: 13px;
+    color: #114165;
+    padding: 7px 0 0 3px;
+}
+
+.catalog_title img, .brands_title img {
+    float: left;
+    padding: 1px 0 0 2px;
+}
+
+.center_content figure {
+    display: inline-block;
+    width: 140px;
+    padding-left: 22px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-right: 1px;
+    text-align: center;
+}
+
+.center_content figcaption:first-child {
+    color: #206988;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.center_content figcaption:nth-child(2) {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding-left: 3px;
+}
+
+.center_content figure span {
+    padding-left: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: #114165;
+}
+
+.center_content a {
+    display: inline-block;
+    margin-bottom: 3px;
+    width: 136px;
+    height: 127px;
+    border: 1px solid #b0b9bc;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.center_content img {
+    padding-top: 4px;
+}
+
+.catalog {
+    overflow: hidden;
+}
+
+.catalog p {
+    width: 145px;
+    height: 25px;
+}
+
+.catalog p, .right_sidebar p {
+    float: left;
+    padding: 1px 0 0 4px;
+    border: 1px solid #79878d;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #114165;
+}
+
+.catalog img, .right_sidebar img {
+    float: left;
+}
+
+.catalog span, .right_sidebar span {
+    float: left;
+    padding: 6px 0 0 2px;
+}
+
+.catalog_menu {
+    margin: 4px 0 0 47px;
+
+}
+
+.catalog_menu li {
+    list-style-type: circle;
+    margin: 0 0 8px 0;
+    color: #465961;
+}
+
+.catalog_menu a {
+    display: inline-block;
+    height: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #465961;
+}
+
+.catalog_menu li:hover {
+    margin: 0 0 8px 0;
+    color: #0c3256;
+}
+
+.catalog_menu a:hover {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0c3256;
+    letter-spacing: 0.5px;
+}
+
+.right_sidebar p {
+    display: inline-block;
+    width: 130px;
+    height: 26px;
+}
+
+.brands_title {
+    margin-left: -1px;
+}
+
+h2 {
+    padding-top: 6px;
+    padding-left: 4px;
+}
+
+.brands_tires {
+    margin-left: 13px;
+    margin-right: 15px;
+    margin-bottom: 4px;
+}
+
+.brands_disks {
+    margin-top: 3px;
+    margin-left: 12px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.brands_disks span {
+    padding-left: 5px;
+}
+
+#brand_1, #brand_2, #brand_3, #brand_4, #brand_5, #brand_6 {
+    width: 10px;
+    height: 10px;
+    /*margin-top: 7px;
+    margin-left: 24px;
+    margin-right: 10px;
+    margin-bottom: 8px;*/
+}
+
+.right_sidebar label {
+    padding-left: 5px;
+    font-size: 12px;
+    color: #465961;
+    letter-spacing: 0.7px;
+}
+
+.right_sidebar form div {
+    clear: both;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 9px;
+}
+
+.right_sidebar [type="submit"] {
+    width: 83px;
+    height: 26px;
+    margin-top: 10px;
+    margin-left: 22px;
+    padding-top: 2px;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    background: -webkit-linear-gradient(bottom, #0d3458 0%, #1f6787 100%);
+    background: -o-linear-gradient(bottom, #0d3458 0%, #1f6787 100%);
+    background: linear-gradient(bottom, #0d3458 0%, #1f6787 100%);
+    background: -ms-linear-gradient(bottom, #0d3458 0%, #1f6787 100%);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 3px 3px 2px #d6d6d6;
+    font-size: 11px;
+    color: #e5e9ea;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.7px;
+}
+
+.right_sidebar [type="submit"]:active {
+    margin-top: 9px;
+    background: -webkit-linear-gradient(bottom, #1f6787 0%, #0d3458 100%);
+    background: -o-linear-gradient(bottom, #1f6787 0%, #0d3458 100%);
+    background: linear-gradient(bottom, #1f6787 0%, #0d3458 100%);
+    background: -ms-linear-gradient(bottom, #1f6787 0%, #0d3458 100%);
+}
+
+.partners {
+    margin-top: 33px;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 23px;
+    width: 910px;
+    height: 100px;
+    background: #213a4d;
+}
+
+footer ul {
+    position: absolute;
+    top: 9px;
+    left: 298px;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer li a {
+    display: inline-block;
+    height: 11px;
+    padding: 0 12px;
+    color: #bec6c9;
+    border-left: 1px solid #bec6c9;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer li:first-child a:first-child {
+    border-left: none;
+}
+
+footer li a:hover {
+    color: #52abcb;
+}
+
+footer p {
+    margin-top: 40px;
+    font-size: 10px;
+    color: #7f4740;
+
+}
