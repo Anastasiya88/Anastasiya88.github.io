@@ -1,0 +1,155 @@
+footer {
+  width: 100%;
+  height: 150px;
+  border-top: 4px solid $color6;
+  padding-top: 38px;
+  overflow: hidden;
+
+  .promo__logo--footer {
+    float: left;
+    margin: 0 6.1% 0 20.2%;
+    padding: 0;
+    color: $color6;
+    font-family: $font1;
+    font-size: $font-size9;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .nav__title {
+    float: left;
+    color: $color3;
+    margin-bottom: 17px;
+    font-family: $font1;
+    font-size: $font-size2;
+  }
+
+  .nav {
+    float: left;
+    margin-right: 5.7%;
+
+    &__item {
+      font-size: $font-size2;
+    }
+
+    &__link {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: $color7;
+      font-family: $font4;
+      text-decoration: none;
+    }
+  }
+
+
+  .design {
+    float: right;
+    margin-right: 20.2%;
+
+    &__text {
+      margin: 0 0 9px 30px;
+      color: $color5;
+      font-family: $font1;
+      font-size: $font-size8;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__link {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  footer {
+    width: 100%;
+    height: 200px;
+    padding-top: 17px;
+    text-align: center;
+
+    .promo__logo--footer {
+      float: none;
+      margin: 0 auto 14px;
+    }
+
+    .nav__title {
+      margin: 0 auto 7px;
+      float: none;
+    }
+
+    .nav {
+      float: none;
+      width: 100%;
+
+      &__list {
+        width: 100%;
+        overflow: hidden;
+        height: 30px;
+        float: none;
+        margin: 0 auto;
+      }
+
+      &__item {
+        display: block;
+        width: 16%;
+        float: left;
+        margin-right: 2%;
+        // margin-left: 3.2%;
+        &:first-of-type {
+          margin-left: 17%;
+        }
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      &__link {
+        margin: 0 auto 10px;
+      }
+    }
+
+
+    .design {
+      float: none;
+      margin-right: 0;
+      margin-top: 16px;
+      margin-bottom: 17px;
+
+      &__text {
+        margin: 0 auto;
+        padding-bottom: 9px;
+        width: 100%;
+      }
+
+      &__link {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  footer {
+    padding-top: 39px;
+    .promo__logo--footer {
+      margin: 0 11% 0 4.9%;
+    }
+
+    .nav{
+      margin-right: 13.2%;
+    }
+
+    .design {
+      margin: 0 4.3%
+    }
+  }
+
+
+}

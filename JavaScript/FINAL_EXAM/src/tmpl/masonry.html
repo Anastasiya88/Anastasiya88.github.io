@@ -1,0 +1,20 @@
+<section class="pictures">
+  <h2 class="pictures__title">Discover holiday activity ideas</h2>
+  <div class="pictures__block">
+    <script type="text/template" id="masonry">
+      <div class="grid clearfix">
+        <% for (var i = 0; i < hits.length; i++) { %>
+          <figure class="grid-item "><img class = "pictures__img" src = "<%= hits[i].webformatURL %>">
+            <figcaption class="pictures__caption"><%= hits[i].tags.split(', ')[1] %></figcaption>
+          </figure>
+        <% }; %>
+      </div>
+    </script>
+  </div>
+  <h2 class="pictures__title">Discover holiday activity ideas</h2>
+  <form class="pictures__search" action="#" method="post">
+    <h3 class="pictures__search__title">Hi! What are your holiday interests?</h3>
+    <input type="text" id="field" placeholder="Enter your interests" class="pictures__search__field">
+    <input type="button" id="search" value="Search partners" class="pictures__search__button">
+  </form>
+</section>

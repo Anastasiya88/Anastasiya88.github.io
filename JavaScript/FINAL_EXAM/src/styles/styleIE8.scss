@@ -1,0 +1,65 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "header";
+@import "jcarousel.responsive";
+@import "partners";
+@import "masonry";
+@import "footer";
+
+.wrapper {
+  min-width: 320px;
+}
+
+.jcarousel__mobile {
+  display: none;
+}
+
+.jcarousel__wrapper {
+  width: 30%;
+}
+
+.jcarousel__title, .pictures__title, .search__title, .jcarousel__block__title,
+.pictures__search__button, button, .nav__title{
+  font-weight: 700;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    top: 40%;
+}
+
+.partners__item {
+  width: 23%;
+}
+
+.partners__item__icon {
+  margin-bottom: -7px;
+  margin-right: -2px;
+}
+
+.pictures {
+  margin-bottom: 160px;
+}
+
+.pictures__search {
+
+  &__field {
+    display: block;
+    float: left;
+    padding-top: 12px;
+    margin-right: 1%;
+    margin-left: 25%;
+  }
+
+  &__button {
+    display: block;
+    float: left;
+    margin: 0 auto;
+  }
+}
+
+nav {
+  width: 5%;
+}

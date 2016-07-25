@@ -1,0 +1,277 @@
+.jcarousel {
+    width: 940px;
+    margin: 97px auto;
+}
+
+.jcarousel__title {
+    margin-bottom: 36px;
+    font-family: $font1;
+    font-size: $font-size6;
+    color: $color3;
+    text-align: center;
+}
+
+.jcarousel__desktop {
+    overflow: hidden;
+}
+
+.jcarousel__wrapper {
+    width: 300px;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel__wrapper:last-child {
+    margin-right: 0;
+}
+
+/** Carousel **/
+
+.jcarousel__menu {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel__list {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel__item {
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    @include border-radius(5px);
+}
+
+.jcarousel__icon {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+.overlayed {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    @include background(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%);
+    @include border-radius(5px);
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    @include border-radius(30px);
+    @include box-shadow(0 0 4px #F0EFE7);
+}
+
+.jcarousel-control-prev {
+    left: 15px;
+}
+
+.jcarousel-control-next {
+    right: 15px;
+}
+
+.jcarousel__block {
+    position: absolute;
+    bottom: 17px;
+    left: 20px;
+    color: $color1;
+}
+
+.jcarousel__step {
+    display: inline-block;
+    width: 70px;
+    height: 8px;
+    padding: 6px 0;
+    @include border-radius(10px);
+    background-color: $color2;
+    color: $color1;
+    font-family: $font2;
+    font-size: $font-size8;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.jcarousel__block__title {
+    margin: 18px -1px 12px;
+    line-height: 1.2;
+    font-family: $font1;
+    font-size: $font-size5;
+}
+
+.jcarousel__text {
+    margin-right: 20px;
+    font-family: $font4;
+    font-size: $font-size2;
+    color: $color5;
+    line-height: 1.2;
+}
+
+
+@media (max-width: 767px) {
+  .jcarousel {
+    width: 96%;
+    height: 777px;
+    margin: 37px auto;
+    font-family: $font1;
+
+    &__title {
+      margin-bottom: 15px;
+      color: $color3;
+      font-size: $font-size6;
+      text-align: center;
+    }
+
+    &__mobile {
+      width: 300px;
+      margin: 0 auto;
+
+      &__item {
+        height: 240px;
+        margin-top: 10px;
+        display: block;
+        color: $color1;
+
+        &--wrapper {
+          height: auto;
+          padding: 69px 20px 15px;
+          @include border-radius(3px);
+          @include background(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+
+        &--wrapper--second {
+          padding-top: 100px;
+        }
+      }
+    }
+
+    &__item {
+
+      &--first {
+        background-image: url("../img/slider1_mob.png");
+      }
+
+      &--second {
+        background-image: url("../img/slider2_mob.png");
+      }
+
+      &--third {
+        background-image: url("../img/slider3_mob.png");
+      }
+
+      &__num {
+        display: inline-block;
+        margin-left: 2px;
+        padding: 7px 12px 5px 14px;
+        background: $color6;
+        @include border-radius(10px);
+        font-weight: 400;
+        font-size: $font-size8;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+
+        &--second {
+          margin-left: 0;
+        }
+      }
+
+      &__title {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: $font-size5;
+        line-height: 1.2;
+      }
+
+      &__text {
+        color: $color5;
+        font-family: $font4;
+        font-size: $font-size2;
+        line-height: 16px;
+
+        &--second {
+          margin-top: -3px;
+        }
+      }
+    }
+
+    &__desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .jcarousel__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .jcarousel {
+      width: 97.5%;
+      margin: 97px auto;
+  }
+
+  .jcarousel__title {
+      margin-bottom: 36px;
+  }
+
+  .jcarousel__wrapper {
+      width: 31%;
+      height: 399px;
+      margin-right: 3.1%;
+      float: left;
+  }
+
+  /** Carousel **/
+
+  .jcarousel__menu {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .jcarousel__item {
+      display: block;
+      height: 100%;
+  }
+
+  .jcarousel__icon {
+      display: block;
+      max-width: 100%;
+      min-height: 399px;
+  }
+
+  /** Carousel Controls **/
+
+  .jcarousel-control-prev,
+  .jcarousel-control-next {
+      top: 30%;
+  }
+
+  .jcarousel__mobile {
+    display: none;
+  }
+}

@@ -1,0 +1,159 @@
+header {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  background: $background-header;
+  background-size: cover;
+  font-family: $font2;
+  color: $color1;
+}
+.promo{
+  overflow: hidden;
+  padding-top: 38px;
+  padding-bottom: 144px;
+
+  &__logo {
+    float: left;
+    margin-left: 20.3%;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $color1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  &__menu {
+    float: right;
+    margin-right: 20.4%;
+
+    &__link {
+      float: left;
+      display: inline-block;
+      padding: $menu-item-padding;
+      @include border(2px solid transparent);
+      font-size: 14px;
+      font-weight: 700;
+      color: $color1;
+      text-decoration: none;
+    }
+
+    &__link:hover {
+      @include border(2px solid $color1);
+      @include border-radius(30px);
+    }
+  }
+}
+
+.search {
+  clear: both;
+  text-align: center;
+
+  &__title {
+    margin: 0 33%;
+    font-family: $font1;
+    font-size: $font-size4;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    padding-top: 25px;
+    padding-bottom: 17px;
+    font-family: $font4;
+    font-size: $font-size5;
+    letter-spacing: 0.2px;
+  }
+
+  &__button {
+    margin-top: 20px;
+    padding: 12px 23px;
+    border: none;
+    @include border-radius(30px);
+    background: $color6;
+    font-family: $font1;
+    font-size: $font-size2;
+    color: $color1;
+    cursor: pointer;
+
+    &:hover {
+      background: $color1;
+      color: $color6;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+    height: 540px;
+    text-align: center;
+  }
+
+.promo {
+  overflow: hidden;
+  padding-top: 21px;
+  padding-bottom: 0;
+
+  &__menu {
+    float: none;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+
+    &__link {
+      display: inline-block;
+      float: none;
+      margin: 0 3% 0 -4%;
+    }
+  }
+
+  &__logo {
+    display: block;
+    float: none;
+    margin: 119px auto 29px;
+    padding-top: 0;
+    color: $color1;
+  }
+}
+
+  .search {
+
+    &__title {
+      margin: 0 0 11px;
+      font-size: $font-size10;
+    }
+
+    &__text {
+      margin: 0 15%;
+      padding: 0;
+      font-size: $font-size7;
+    }
+
+    &__button {
+      padding: 12px 51px;
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .promo {
+
+    &__menu {
+      margin-right: 6.1%;
+    }
+
+    &__logo {
+      margin-left: 6.5%;
+    }
+  }
+  .search__title {
+    margin: 0 11%;
+  }
+}
