@@ -90,3 +90,15 @@ header {
 footer{
   left:0px; top: 200px;
 }
+
+.slider-text {
+  position: absolute;
+  display: block;
+  height: 35%;
+  padding: 4px 0 0 8px;
+  background: $color9;
+  color: white;
+  font-size: 42px;
+  width: 20%;
+  left:6%; top: 30%;
+}
