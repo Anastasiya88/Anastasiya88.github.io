@@ -1,0 +1,100 @@
+footer{
+	left:0px; top:115px;
+
+	.wrapper{
+		padding: 0;
+		position: relative;
+	}
+
+	.slider-text {
+		position: absolute;
+		left:8%; top:35%;
+		display: block;
+		width: 60%;
+		height: 35%;
+		padding: 4px 0 0 8px;
+		background: $slick-arrow-background-color;
+		color: $slick-arrow-color;
+	}
+
+}
+
+@media (max-width: 360px) {
+	.slider-text {
+		font-size: $font-size9;
+	}
+}
+
+
+@media (min-width: 360px) and (max-width: 480px) {
+	.slider-text {
+		font-size: $font-size7;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 600px) {
+	.slider-text {
+		font-size: $font-size5;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+	.slider-text {
+		font-size: $font-size3;
+	}
+}
+
+@media (max-width: 767px) {
+	.slider-desktop {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	footer{
+		left:0px; top: 160px;
+	}
+	.slider-mobile {
+		display: none;
+	}
+	.slick-prev,
+	.slick-next {
+	    height: 63px;
+	    width: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	footer{
+		.slider-text {
+			font-size: 26px;
+			width: 40%;
+			left:6%; top: 30%;
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	footer{
+		.slider-text {
+			font-size: 32px;
+			width: 40%;
+			left:6%; top: 30%;
+		}
+	}
+	.slick-prev,
+	.slick-next {
+			height: 100px;
+			width: 30px;
+	}
+}
+
+@media (min-width: 1168px) {
+	footer{
+		.slider-text {
+			font-size: 42px;
+			width: 40%;
+			left:6%; top: 30%;
+		}
+	}
+}
